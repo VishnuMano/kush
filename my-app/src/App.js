@@ -1,8 +1,39 @@
 import logo from './assets/imgs/logo.png';
+import React, { useState } from 'react';
+import { firestore } from './components/firebase/firebaseConfig'; // Adjust the path as necessary
+import { initializeApp } from 'firebase/app';
+import { getFirestore, arrayUnion, collection, doc, setDoc  } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth';
 
 import './App.css';
 
 function App() {
+
+  const firestore = getFirestore();
+  const collectionRef = collection(firestore, "waitlistEmails");
+  const docRef = doc(collectionRef, "emails");
+
+  const auth = getAuth();
+
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      await setDoc (docRef,{
+        emails: arrayUnion(email)
+      }, { merge: true });
+      alert('Email added to waitlist!');
+    } catch (error) {
+      console.error('Error adding email to Firestore: ', error);
+      alert('Failed to add email. Please try again.');
+    }
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,10 +52,18 @@ function App() {
               </div>
             </div>
 
-              <div className="email-signup" >
-                <input type="email" className="email-input" placeholder="Email"/>
+            <div className="email-signup">
+              <form onSubmit={handleSubmit} className="btn-form">
+                <input
+                    type="email"
+                    className="email-input"
+                    placeholder="Email"
+                    value={email}
+                    onChange={handleEmailChange}
+                />
                 <button type="submit" className="signup-button">I'm in!</button>
-              </div>
+              </form>
+            </div>
 
           </div>
 
@@ -36,7 +75,7 @@ function App() {
         <div className={"bottomnavWrapper"}>
           <center>
             <div className="bottomnav">
-              <p className="text2" style={{fontSize: "24px", fontWeight: "normal"}}>What we do <b>↓</b></p>
+            <p className="text2" style={{fontSize: "24px", fontWeight: "normal"}}>What we do <b>↓</b></p>
             </div>
           </center>
         </div>

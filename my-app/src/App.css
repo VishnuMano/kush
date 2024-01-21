@@ -108,12 +108,16 @@
   justify-content: space-evenly;
 }
 
-.email-signup {
+.btn-form {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 2rem; /* Adjust the space between the input and the button */
+}
+
+.email-signup {
+
   width: 100%;
   background-color: rgba(91, 122, 157, 0);
 }
