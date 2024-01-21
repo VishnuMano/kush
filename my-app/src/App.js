@@ -19,7 +19,7 @@ function App() {
             </div>
           </div>
           <div className="Text-holder" style={{width: "30%"}}>
-            <p>hell</p>
+            <p>hello</p>
           </div>
         </div>
 
