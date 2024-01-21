@@ -29,8 +29,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 40%;
-  background-color: purple;
+  width: 100%;
+  background-color: rgba(128, 0, 128, 0);
   gap: 0.3rem;
   margin: 0;
   padding: 0;
@@ -66,7 +66,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: darkmagenta;
+  background-color: rgba(139, 0, 139, 0);
   gap: 0.3rem;
 }
 
@@ -75,13 +75,22 @@
   flex-direction: row;
   justify-content: center;
   margin: 0rem;
-  background-color: red;
-  width: 80vw;
+  background-color: rgba(255, 0, 0, 0);
+  width: 100vw;
+  gap: 3rem;
+
+}
+
+.Two-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
+  background-color: rgba(97, 218, 251, 0);
 }
 
 .bottomnavWrapper {
-  background-color: #8DB642; /* used to be 2C3E50 */
+  background-color: rgb(141, 182, 66); /* used to be 2C3E50 */
   overflow: hidden;
   position: fixed;
   bottom: 0;
@@ -99,4 +108,48 @@
   justify-content: space-evenly;
 }
 
+.email-signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem; /* Adjust the space between the input and the button */
+  width: 100%;
+  background-color: rgba(91, 122, 157, 0);
+}
+
+.email-input {
+  padding: 1rem;
+  font-size: 1.5rem; /* Adjust as needed */
+  border: none; /* Adjust for border color */
+  border-radius: 1rem; /* Adjust for border radius */
+  outline: none;
+  text-align: center;
+  width: 60%;
+
+}
+
+.signup-button {
+  padding: 1rem 60px;
+  font-size: 1.5rem; /* Adjust as needed */
+  background-color: #000000; /* Adjust for button color */
+  color: white;
+  border: none;
+  border-radius: 1rem; /* Adjust for border radius */
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  width: 30%;
+}
+
+/* Hover effect for button */
+.signup-button:hover {
+  background-color: #5b7a9d; /* Darken button on hover */
+}
+
+.App-logo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
