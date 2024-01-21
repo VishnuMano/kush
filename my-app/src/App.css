@@ -61,6 +61,13 @@
   font-size: 40px;
 }
 
+.text3 {
+  margin: 0;
+  text-align: start;
+  font-weight: normal;
+  font-size: 30px;
+}
+
 .Text-holder2 {
   margin-top: 1.5rem;
   display: flex;
@@ -157,3 +164,8 @@
   object-fit: cover;
 }
 
+#learn-more {
+  color: black;
+  margin: 0rem;
+  padding: 0rem;
+}
