@@ -36,7 +36,7 @@ function App() {
         <div className={"bottomnavWrapper"}>
           <center>
             <div className="bottomnav">
-              <p className="text2" style={{fontSize: "24px", fontWeight: "normal"}}>What's kush? <b>↓</b></p>
+              <p className="text2" style={{fontSize: "24px", fontWeight: "normal"}}>What we do <b>↓</b></p>
             </div>
           </center>
         </div>
