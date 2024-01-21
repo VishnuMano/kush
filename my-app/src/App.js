@@ -83,8 +83,8 @@ useEffect(() => {
               <div className="Text-holder2">
                 <p className="text2" style={{fontWeight: "lighter", marginBottom: "1.5rem"}}> Good weed. Good delivery. Great times.</p>
                 <p style={{fontWeight: "lighter", marginBottom: "0rem"}}>launching in <strong>{`${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`}</strong></p>
-                <p style={{fontWeight: "lighter", marginBottom: "0rem"}}><a href="#" id="learn-more">Learn More<b>→</b></a></p>
-                <p style={{fontWeight: "lighter", marginBottom: "0rem"}} className="text2">Join our waitlist</p>
+                <p style={{fontWeight: "lighter", marginBottom: "0rem"}}><a href="#" id="learn-more">Learn More</a></p>
+                <p style={{fontWeight: "lighter", marginBottom: "0rem", marginTop: "0rem"}}>Join our waitlist <b>↓</b></p>
               </div>
             </div>
 
