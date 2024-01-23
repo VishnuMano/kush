@@ -81,10 +81,10 @@ useEffect(() => {
               <p className="Text-title">kush.</p>
               <p className="text1" style={{fontWeight: "normal"}}>Seamless cannibus delivery.</p>
               <div className="Text-holder2">
-                <p className="text2" style={{fontWeight: "lighter", marginBottom: "1.5rem"}}> Good weed. Good delivery. Great times.</p>
-                <p style={{fontWeight: "lighter", marginBottom: "0rem"}}>launching in <strong>{`${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`}</strong></p>
-                <p style={{fontWeight: "lighter", marginBottom: "0rem"}}><a href="#" id="learn-more">Learn More</a></p>
-                <p style={{fontWeight: "lighter", marginBottom: "0rem", marginTop: "0rem"}}>Join our waitlist <b>↓</b></p>
+                <p className="text2" style={{fontWeight: "normal", marginBottom: "1.5rem"}}>Good weed. Good delivery. Great times.</p>
+                <p style={{fontWeight: "normal", marginBottom: "0rem"}}>launching in <strong>{`${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`}</strong></p>
+                <p style={{fontWeight: "normal", marginBottom: "0rem"}}><a href="#" id="learn-more">Learn More</a></p>
+                <p style={{fontWeight: "normal", marginBottom: "0rem", marginTop: "0rem"}}>Join our waitlist <b>↓</b></p>
               </div>
             </div>
 
