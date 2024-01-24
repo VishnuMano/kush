@@ -4,6 +4,7 @@ import { firestore } from './components/firebase/firebaseConfig'; // Adjust the 
 import { initializeApp } from 'firebase/app';
 import { getFirestore, arrayUnion, collection, doc, setDoc  } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
+import Info from './components/Info';
 
 import './App.css';
 
@@ -114,6 +115,10 @@ useEffect(() => {
             <p className="text2" style={{fontSize: "24px", fontWeight: "normal"}}>What we do <b>↓</b></p>
             </div>
           </center>
+        </div>
+
+        <div className="App">
+            <Info />
         </div>
       </header>
     </div>

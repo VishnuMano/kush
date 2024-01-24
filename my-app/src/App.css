@@ -99,7 +99,7 @@
 .bottomnavWrapper {
   background-color: #669b03; /* used to be 2C3E50 */
   overflow: hidden;
-  position: fixed;
+  position: static;
   bottom: 0;
   width: 100%;
   height: 3rem;
